@@ -1,0 +1,697 @@
+/*header*/
+header {
+  color: black;
+  background-color: #FFFFFF;
+  margin: 30px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px #FFFFFF;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 20px;
+}
+header .navbar .navbar-brand img {
+  width: 180px;
+}
+header ul a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+header ul a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+header ul a:hover::after {
+  background-color: black;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  margin: 30px 60px;
+  padding: 10px 140px 10px 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 20px;
+}
+footer img {
+  width: 130px;
+  border-radius: 100px;
+}
+
+/*index*/
+/*main*/
+.main-uno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 140px 10px 90px;
+}
+.main-uno .textos {
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 100px;
+}
+.main-uno .textos h1 {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  font-weight: 700;
+  margin: 40px 0px;
+  box-shadow: 1px 1px 10px white;
+  width: 200px;
+  margin: 30px;
+  padding: 10px;
+  display: inline-block;
+}
+.main-uno .textos .boton {
+  background-color: #10a60f;
+  color: black;
+  margin: 40px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 5px #10a60f;
+  border-radius: 10px;
+  font-weight: 550;
+}
+.main-uno .textos .boton:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.main-uno .img img {
+  width: 80%;
+  margin: 100px;
+  box-shadow: 5px 5px 20px white;
+  border-radius: 10px;
+}
+
+/* Media QR*/
+/* Media QR Celular*/
+@media screen and (max-width: 500px) {
+  .main-uno {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    padding: 1% 0px;
+  }
+  .main-uno .textos {
+    margin-top: 1px;
+  }
+  .main-uno .img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 1% 0px;
+    margin-bottom: 0px;
+  }
+  .footer-main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+/*MQ tablet*/
+@media screen and (min-width: 501px) and (max-width: 959px) {
+  .mian-uno .img {
+    padding: 0px;
+    justify-content: center;
+  }
+  .mian-uno .img img {
+    margin: 50px;
+    width: 130%;
+  }
+}
+/*nosotros*/
+/*main*/
+.main-dos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-dos div .titulo {
+  font-weight: 900;
+  font-size: 250%;
+}
+.main-dos div .span {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 200%;
+}
+.main-dos div .texto-nosotros {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 70px;
+}
+.main-dos div .boton {
+  background-color: white;
+  color: black;
+  margin: 40px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.main-dos div .boton:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.main-dos div .boton .app {
+  text-decoration: none;
+  color: black;
+}
+
+.nosotros-sec img {
+  width: 30%;
+  margin: 9%;
+  box-shadow: 5px 5px 20px white;
+  border-radius: 10px;
+}
+
+footer a .google {
+  width: 40%;
+}
+
+/*MQ nosotros*/
+/*celular*/
+@media screen and (max-width: 500px) {
+  .main-dos div .titulo {
+    gap: 100px;
+  }
+  .main-dos div .titulo .span {
+    font-size: 20px;
+    font-weight: 0;
+  }
+  .nosotros-sec .contenedor-img {
+    display: flex;
+    justify-content: center;
+  }
+  .nosotros-sec .contenedor-img .img-2 {
+    display: none;
+  }
+  .nosotros-sec .contenedor-img .img-1 {
+    width: 60%;
+  }
+  .footer-nosot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-nosot .google {
+    display: none;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 959px) {
+  .footer-nosot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-nosot .google {
+    display: none;
+  }
+}
+/*INSTALACIONES*/
+.main-tres div h1 {
+  margin: 60px;
+  padding-top: 50px;
+  font-weight: 900;
+}
+.main-tres div h1 .gimnasio {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+.main-tres div .texto {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 70px;
+}
+
+.instalaciones-sec div {
+  display: flex;
+  justify-content: center;
+}
+.instalaciones-sec div .mapa {
+  margin: 60px 30px;
+  width: 100%;
+  height: 400px;
+  border-radius: 30px;
+}
+
+/*MEDIA QR*/
+/*Celular*/
+@media screen and (max-width: 500px) {
+  .main-tres div h1 .gimnasio {
+    padding: 1px;
+    border-radius: 10px;
+  }
+  .main-tres div .texto {
+    width: 400px;
+  }
+  .instalaciones-sec div .mapa {
+    margin-top: 1px;
+  }
+  .footer-inst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/*PLANES*/
+main div .titulo {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+main div .titulo .span {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.cajas {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+  column-gap: 50px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(147, 149, 153) 35%, rgb(147, 149, 153) 65%, rgb(0, 0, 0) 100%);
+  padding: 5% 0px;
+  background: none;
+}
+.cajas .caja-1 {
+  background-color: #10a60f;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px #10a60f;
+}
+.cajas .caja-1 .encabezado {
+  height: fit-content;
+  margin: 0px;
+  padding: 15px;
+}
+.cajas .caja-1 .titulo {
+  font-size: 5rem;
+}
+.cajas .caja-1 .subtitulo {
+  font-size: 3rem;
+  line-height: 15px;
+}
+.cajas .caja-1 .precio {
+  background-color: black;
+  padding: 2rem;
+  border: solid 8px;
+  border-color: #10a60f;
+  border-radius: 20px;
+}
+.cajas .caja-1 .moneda {
+  font-size: 1rem;
+}
+.cajas .caja-1 .numero {
+  font-size: 2rem;
+}
+.cajas .caja-1 .descripcion-contenedor {
+  margin: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.cajas .caja-1 .comprar {
+  background-color: white;
+  color: #10a60f;
+  margin: 40px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cajas .caja-1 .comprar:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.cajas .caja-2 {
+  background-color: #10a60f;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px #10a60f;
+}
+.cajas .caja-2 .encabezado {
+  height: fit-content;
+  margin: 0px;
+  padding: 15px;
+}
+.cajas .caja-2 .titulo {
+  font-size: 5rem;
+}
+.cajas .caja-2 .subtitulo {
+  font-size: 3rem;
+  line-height: 15px;
+}
+.cajas .caja-2 .precio {
+  background-color: black;
+  padding: 2rem;
+  border: solid 8px;
+  border-color: #10a60f;
+  border-radius: 20px;
+}
+.cajas .caja-2 .moneda {
+  font-size: 1rem;
+}
+.cajas .caja-2 .numero {
+  font-size: 2rem;
+}
+.cajas .caja-2 .descripcion-contenedor {
+  margin: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.cajas .caja-2 .comprar {
+  background-color: white;
+  color: #10a60f;
+  margin: 40px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cajas .caja-2 .comprar:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.cajas .caja-3 {
+  background-color: #10a60f;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px #10a60f;
+}
+.cajas .caja-3 .encabezado {
+  height: fit-content;
+  margin: 0px;
+  padding: 15px;
+}
+.cajas .caja-3 .titulo {
+  font-size: 5rem;
+}
+.cajas .caja-3 .subtitulo {
+  font-size: 3rem;
+  line-height: 15px;
+}
+.cajas .caja-3 .precio {
+  background-color: black;
+  padding: 2rem;
+  border: solid 8px;
+  border-color: #10a60f;
+  border-radius: 20px;
+}
+.cajas .caja-3 .moneda {
+  font-size: 1rem;
+}
+.cajas .caja-3 .numero {
+  font-size: 2rem;
+}
+.cajas .caja-3 .descripcion-contenedor {
+  margin: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.cajas .caja-3 .comprar {
+  background-color: white;
+  color: #10a60f;
+  margin: 40px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cajas .caja-3 .comprar:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+/*mq cajas*/
+@media screen and (max-width: 500px) {
+  .cajas {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding: 10px;
+  }
+  .footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 959px) {
+  .cajas {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 20px;
+  }
+}
+/*servicios*/
+.main-cuatro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+.main-cuatro div .contenedor-titulo {
+  margin: 60px;
+  padding-top: 50px;
+  font-weight: 900;
+}
+.main-cuatro div .contenedor-titulo .contenedor-span {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+.main-cuatro div .texto-servicios {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 70px;
+  width: 600px;
+}
+.main-cuatro div .sub-uno {
+  margin: 60px;
+  font-weight: 900;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+.main-cuatro div .horarios {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 10px 150px;
+}
+.main-cuatro div div .sub-dos {
+  margin: 60px;
+  font-weight: 900;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+.main-cuatro div div .contenedor-whatsapp {
+  margin: 1px 60px;
+  font-weight: 900;
+  display: block;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+.main-cuatro div div .numero-telefono {
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+}
+.main-cuatro div div .numero-telefono img {
+  width: 50px;
+  margin: 1px 60px;
+  margin-right: 1px;
+}
+.main-cuatro div div .numero-telefono p {
+  margin: 1px 60px;
+  margin-left: 10px;
+  font-weight: 900;
+}
+.main-cuatro section .carousel-inner {
+  background-color: black;
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+.main-cuatro section.carousel-control-prev-icon, .main-cuatro section.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/*mq servicios*/
+@media screen and (max-width: 500px) {
+  .main-cuatro {
+    display: block;
+    justify-content: center;
+  }
+  .main-cuatro div .contenedor-titulo {
+    margin: 30px 10px;
+    padding-top: 20px;
+  }
+  .main-cuatro div .contenedor-titulo .contenedor-span {
+    padding: 5px;
+  }
+  .main-cuatro div .texto-servicios {
+    width: 100%;
+    margin: 20px;
+  }
+  .main-cuatro div .sub-uno,
+  .main-cuatro div .sub-dos {
+    margin: 20px;
+    padding: 5px;
+  }
+  .main-cuatro div .horarios {
+    margin: 5px 20px;
+  }
+  .main-cuatro div .numero-telefono {
+    flex-direction: column;
+    display: flex;
+  }
+  .main-cuatro div .numero-telefono p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-cuatro div .numero-telefono img {
+    display: none;
+  }
+  .main-cuatro section .carousel-inner {
+    width: 100%;
+    margin: 40px;
+  }
+  .footer-serv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 959px) {
+  .main-cuatro {
+    display: block;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .main-cuatro div .contenedor-titulo {
+    margin: 40px 20px;
+    padding-top: 30px;
+    font-size: 24px;
+  }
+  .main-cuatro div .contenedor-titulo .contenedor-span {
+    padding: 8px;
+  }
+  .main-cuatro div .texto-servicios {
+    width: 100%;
+    margin: 30px;
+  }
+  .main-cuatro div .sub-uno,
+  .main-cuatro div .sub-dos {
+    margin: 30px;
+    padding: 8px;
+    font-size: 24px;
+  }
+  .main-cuatro div .horarios {
+    margin: 10px 50px;
+    font-size: 18px;
+  }
+  .main-cuatro div .contenedor-whatsapp {
+    margin: 5px 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .main-cuatro div .numero-telefono {
+    margin: 5px 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-cuatro div .numero-telefono img {
+    width: 40px;
+    margin: 0 10px;
+  }
+  .main-cuatro .section .carousel-inner {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

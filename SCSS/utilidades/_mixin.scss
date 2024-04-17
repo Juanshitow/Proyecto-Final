@@ -1,0 +1,196 @@
+@mixin boton-styles ($color-terciario , $color-principal , $color-secundario) {
+
+    background-color: $color-secundario;
+    color: $color-terciario;
+    margin: 40px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px $color-principal;
+    border-radius: 20px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    &:hover {
+        font-size: 25px;
+        transition: 0.5s;
+    }
+}
+
+@mixin cajas-styles ($color-terciario , $color-principal , $color-secundario) {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+
+    justify-content: center;
+
+    column-gap: 50px;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(147, 149, 153, 1) 35%, rgba(147, 149, 153, 1) 65%, rgba(0, 0, 0, 1) 100%);
+
+    padding: 5% 0px;
+
+    background: none;
+
+    .caja-1 {
+        background-color: $color-terciario;
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+
+        border-radius: 20px;
+        box-shadow: 1px 1px 30px $color-terciario;
+
+        .encabezado {
+            height: fit-content;
+            margin: 0px;
+            padding: 15px;
+        }
+
+        .titulo {
+            font-size: 5rem;
+        }
+
+        .subtitulo {
+            font-size: 3rem;
+            line-height: 15px;
+        }
+
+        .precio {
+            background-color: $color-principal;
+            padding: 2rem;
+            border: solid 8px;
+            border-color: $color-terciario;
+            border-radius: 20px;
+        }
+
+        .moneda {
+            font-size: 1rem;
+        }
+
+        .numero {
+            font-size: 2rem;
+        }
+
+        .descripcion-contenedor {
+            margin: 20px;
+            padding-top: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .comprar {
+            @include boton-styles ($color-terciario , $color-principal , $color-secundario)
+        }
+    }
+
+    .caja-2 {
+        background-color: $color-terciario;
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+
+        border-radius: 20px;
+        box-shadow: 1px 1px 30px $color-terciario;
+
+        .encabezado {
+            height: fit-content;
+            margin: 0px;
+            padding: 15px;
+        }
+
+        .titulo {
+            font-size: 5rem;
+        }
+
+        .subtitulo {
+            font-size: 3rem;
+            line-height: 15px;
+        }
+
+        .precio {
+            background-color: $color-principal;
+            padding: 2rem;
+            border: solid 8px;
+            border-color: $color-terciario;
+            border-radius: 20px;
+        }
+
+        .moneda {
+            font-size: 1rem;
+        }
+
+        .numero {
+            font-size: 2rem;
+        }
+
+        .descripcion-contenedor {
+            margin: 20px;
+            padding-top: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .comprar {
+            @include boton-styles ($color-terciario , $color-principal , $color-secundario)
+        }
+    }
+
+    .caja-3 {
+        background-color: $color-terciario;
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+
+        border-radius: 20px;
+        box-shadow: 1px 1px 30px $color-terciario;
+
+        .encabezado {
+            height: fit-content;
+            margin: 0px;
+            padding: 15px;
+        }
+
+        .titulo {
+            font-size: 5rem;
+        }
+
+        .subtitulo {
+            font-size: 3rem;
+            line-height: 15px;
+        }
+
+        .precio {
+            background-color: $color-principal;
+            padding: 2rem;
+            border: solid 8px;
+            border-color: $color-terciario;
+            border-radius: 20px;
+        }
+
+        .moneda {
+            font-size: 1rem;
+        }
+
+        .numero {
+            font-size: 2rem;
+        }
+
+        .descripcion-contenedor {
+            margin: 20px;
+            padding-top: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .comprar {
+            @include boton-styles ($color-terciario , $color-principal , $color-secundario)
+        }
+    }
+}
