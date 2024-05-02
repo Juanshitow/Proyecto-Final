@@ -42,6 +42,7 @@ header nav ul {
 body {
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 footer {
@@ -636,6 +637,7 @@ main div .titulo .span {
     display: none;
   }
   .main-cuatro section .carousel-inner {
+    max-width: 100%;
     width: 100%;
     margin: 40px;
   }
